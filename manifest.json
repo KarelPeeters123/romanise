@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Romanise",
+  "version": "1.0",
+
+  "description": "Adds roman numerals to the upvotes on /r/RoughRomanMemes",
+
+  "icons": {
+    "48": "icons/romanise-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/r/RoughRomanMemes/*"],
+      "js": ["Musk.js"]
+    }
+  ]
+
+}

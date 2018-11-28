@@ -1,0 +1,16 @@
+function romanize(num) {
+  var lookup = {M:1000,CM:900,D:500,CD:400,C:100,XC:90,L:50,XL:40,X:10,IX:9,V:5,IV:4,I:1},roman = '',i;
+  for ( i in lookup ) {
+    while ( num >= lookup[i] ) {
+      roman += i;
+      num -= lookup[i];
+    }
+  }
+  return roman;
+}
+var all = document.getElementsByClassName("score");
+
+for (var i=0, max=all.length; i < max; i++) {
+  all[i].innerHTML = romanize(Number(all[i].innerHTML)).toString();
+  all[i].style.marginRight = "500px";
+}
