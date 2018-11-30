@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Romanise",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Adds roman numerals to the upvotes on /r/RoughRomanMemes",
 
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.reddit.com/r/RoughRomanMemes/*"],
-      "js": ["Musk.js"]
+      "js": ["romanise.js"]
     }
   ]
 
